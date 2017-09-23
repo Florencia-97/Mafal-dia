@@ -1,28 +1,16 @@
 <footer class="site-footer">
-
     <div class="wrapper">
-
-        <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
         <div class="footer-col-wrapper">
             <div class="footer-col footer-col-1">
                 <ul class="contact-list">
                     <li>
-                        {% if site.author %}
-                        {{ site.author | escape }}
-                        {% else %}
-                        {{ site.title | escape }}
-                        {% endif %}
-                    </li>
-                    <li>
-                        <a href="https://github.com/FdelMazo/Mafal-dia"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="source">{{ site.githubtitle }}</span></a>
+                        <a href="{{site.githubsrc}}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="source">{{ site.title }}</span></a>
                         <p></p>
-                        <a href="https://github.com/FdelMazo"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="source">FdelMazo</span></a>
-                        <br/>
-                        <a href="https://github.com/Florencia-97"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="source">Florencia-97</span></a>
+                        {% include icon-github.html username=site.githubuser1 %}
+                        {% include icon-github.html username=site.githubuser2 %}
                     </li>
                     <p></p>
-                    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    <li><a href="mailto:{{ site.email1 }}">{{ site.email1 }}</a></li>
                     <li><a href="mailto:{{ site.email2 }}">{{ site.email2 }}</a></li>
 
                 </ul>
@@ -32,7 +20,7 @@
                 <ul class="social-media-list">
                 </ul>
             </div>
-            <p><img src="assets/img/background.png" alt="" style="width: 150px;"/></p>
+            <p><img src="assets/img/background.png" alt="" style="width: 100px;"/></p>
             <div class="footer-col footer-col-3" align="right">
             </div>
         </div>

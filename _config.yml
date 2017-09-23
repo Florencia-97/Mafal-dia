@@ -14,12 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Mafal-Día
-email: federicodelmazo@hotmail.com  florrr1997@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Mafal-Día! Una historieta de Mafalda, todos los días
 baseurl: "/home"
 # url: "http://mafaldapordia.tk/" o "http://mafal-dia.tk/"
-github_username:  FdelMazo Florencia-97
+
+email1: federicodelmazo@hotmail.com
+email2: florrr1997@gmail.com
+
+githubsrc: https://github.com/FdelMazo/mafal-dia
+githubuser1: FdelMazo
+githubuser2: Florencia-97
 
 # Build settings
 markdown: kramdown
